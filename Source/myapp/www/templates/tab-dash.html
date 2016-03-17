@@ -1,0 +1,22 @@
+<ion-view view-title="Weather">
+  <ion-content class="padding">
+           <style>
+      .box
+      {
+          position: absolute;
+          left: 43%;
+      }
+          
+          </style>
+      <div class="box">
+<input type="text" id="CityName" placeholder="City Name" ng-model="endlocation" />
+      <button id="btn_getReview" ng-click="getWeatherEnd()">Search</button>
+      <div class="weather2"><p class="cityname1">{{cityEnd}}</p>
+                    <p>Temperature: {{tempidEnd}}&#8451</p>
+                    <p>Wind Speed: {{windspeedEnd}}</p>
+                    <p>Sky: {{descEnd}}  <img class="icon" ng-src="http://openweathermap.org/img/w/{{iconEnd}}.png"></p>
+                </div>
+          </div>
+  </ion-content>
+    
+</ion-view>
